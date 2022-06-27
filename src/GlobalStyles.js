@@ -4,6 +4,13 @@ import {createGlobalStyle} from 'styled-components';
 const styled = {createGlobalStyle};
 
 export default styled.createGlobalStyle`
+:root {
+  --primary-color: #738b8c;
+  --primary-light-color: #b8ddf4;
+  --secondary-color: #acc7cd;
+  --secondary-light-color: #e5d2eb;
+
+}
   * {
     box-sizing: border-box;
   }
