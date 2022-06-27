@@ -6,6 +6,7 @@ import data from './data.json';
 
 
 export default function App() {
+
   const [imageError, setImageError] = useState(false);
 
 
@@ -38,3 +39,4 @@ const MainContainer = styled.div`
   
   
 `;
+
