@@ -1,4 +1,4 @@
-import { render, screen, document } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import ChairCard from './ChairCard';
 
