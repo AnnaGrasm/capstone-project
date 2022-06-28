@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
+import { ButtonDescription } from './ButtonDescription';
 
-export default function ChairList({name, mainImg}) {
-  console.log(event => event.target.src);
+
+export default function ChairCard({name, mainImg}) {
+
 
   return (
     <ChairItem>
       <ChairHeader>{name}</ChairHeader>
       <ChairDetails>
         <img src={mainImg} alt={name} width="200" />
-        <button>Description</button>
+        <ButtonDescription>Description</ButtonDescription>
       </ChairDetails>
     </ChairItem>
   );
@@ -34,4 +36,6 @@ const ChairDetails = styled.article`
   align-items: flex-start;
   justify-content: space-around;
   margin-bottom: 1rem;
+
+ 
 `;

@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-import ChairList from './component/ChairList';
+import ChairCard from './component/ChairCard';
 import data from './data.json';
 
 
 
 export default function App() {
-  const [imageError, setImageError] = useState(false);
 
 
   return (
@@ -15,7 +14,7 @@ export default function App() {
       <h1>Find your perfect Design Chair</h1>
       <MainContainer>
         {data.map(item => (
-          <ChairList key={item._id} name={item.name} mainImg={item.imgUrl} imageError={imageError} setImageError={setImageError} />
+          <ChairCard key={item._id} name={item.name} mainImg={item.imgUrl} />
         ))}
       </MainContainer>
     </AppContainer>
