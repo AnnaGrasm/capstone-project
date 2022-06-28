@@ -5,6 +5,7 @@ import ChairList from './component/ChairList';
 import data from './data.json';
 
 
+
 export default function App() {
   const [imageError, setImageError] = useState(false);
 

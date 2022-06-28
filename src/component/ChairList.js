@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export default function ChairList({name, mainImg}) {
   console.log(event => event.target.src);
 
