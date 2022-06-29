@@ -36,4 +36,4 @@ const MainContainer = styled.div`
   background-color: var(--secondary-color);
   
   
-`;
+`
