@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 
 import ChairCard from './component/ChairCard';
@@ -14,7 +13,7 @@ export default function App() {
       <h1>Find your perfect Design Chair</h1>
       <MainContainer>
         {data.map(item => (
-          <ChairCard key={item._id} name={item.name} mainImg={item.imgUrl} />
+          <ChairCard key={item._id} name={item.name} mainImg={item.imgUrl} description={item.description} />
         ))}
       </MainContainer>
     </AppContainer>

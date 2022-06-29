@@ -3,15 +3,16 @@ import styled from 'styled-components';
 import { ButtonDescription } from './ButtonDescription';
 
 
-export default function ChairCard({name, mainImg}) {
+export default function ChairCard({name, mainImg, description}) {
 
 
   return (
-    <ChairItem>
-      <ChairHeader>{name}</ChairHeader>
+    <ChairItem role="listItem">
+      <ChairHeader >{name}</ChairHeader>
       <ChairDetails>
         <img src={mainImg} alt={name} width="200" />
         <ButtonDescription>Description</ButtonDescription>
+        <p>{description}</p>
       </ChairDetails>
     </ChairItem>
   );
