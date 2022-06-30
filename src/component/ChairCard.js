@@ -7,7 +7,7 @@ export default function ChairCard({name, mainImg, description}) {
 
 
   return (
-    <ChairItem role="listItem">
+    <ChairItem role='chair-item'>
       <ChairHeader >{name}</ChairHeader>
       <ChairDetails>
         <img src={mainImg} alt={name} width="200" />

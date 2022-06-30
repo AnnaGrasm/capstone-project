@@ -4,17 +4,10 @@ import ChairCard from './ChairCard';
 
 describe('ChairList', () => {
   it('renders chair name, chair image und a button', () => {
-    render(<ChairCard />);
-
-    const chairList = screen.getByRole('listItem');
-    expect(chairList).toBeInTheDocument();
-  });
-
-  it('renders chair name, chair image und a button', () => {
     render(<ChairCard name="Wishbone Chair" description="When designing the CH24 chair" />);
 
     const name = screen.getByText(/Wishbone Chair/i);
-    const img = screen.getByRole('img');
+    const img = screen.getByAltText('Wishbone Chair');
     const description = screen.getByText(/When designing the CH24 chair/i);
 
     expect(name).toBeInTheDocument();
