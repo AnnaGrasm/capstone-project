@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 
-export function ButtonDescription() {
+export function ButtonDescription({toggleDescription, showDescription, id}) {
   return (
-    <Button>Description</Button>
+    <Button onClick={() => toggleDescription(id)}>{showDescription ? 'Hide Description' : 'Show Description'}
+    </Button>
+    
   )
 }
 
 const Button = styled.button `
     border: none;
-   border-radius: 1rem;
-   padding: 1rem;
+   border-radius: .8rem;
+   padding: .5rem;
    background-color: var(--primary-color);
+   font-weight: 800;
+  
 `
 
