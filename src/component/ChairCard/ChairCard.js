@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import ButtonDescription from '../ButtonDescription/ButtonDescription';
 
-export default function ChairCard({name, mainImg, description, toggleDescription, id, showDescription, index}) {
+export default function ChairCard({name, mainImg, description, toggleDescription, id, showDescription}) {
   return (
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
@@ -13,10 +13,9 @@ export default function ChairCard({name, mainImg, description, toggleDescription
             toggleDescription={toggleDescription}
             showDescription={showDescription}
             name={name}
-            index={index}
+            id={id}
             description={description}
           ></ButtonDescription>
-          
         </div>
       </ChairDetails>
     </ChairItem>
@@ -26,8 +25,8 @@ export default function ChairCard({name, mainImg, description, toggleDescription
 const ChairItem = styled.section`
   display: flex;
   flex-flow: column wrap;
-  border: solid 4px var(--secondary-color);
   margin: 1rem;
+  border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
 `;
 
@@ -45,12 +44,10 @@ const ChairDetails = styled.article`
   margin-bottom: 1rem;
 
   img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     border: 2px solid #f2f3f6;
     padding: 5px;
   }
 `;
-
-

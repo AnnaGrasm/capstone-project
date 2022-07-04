@@ -4,13 +4,11 @@ import styled from 'styled-components';
 
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 
-export default function ButtonDescription({toggleDescription, showDescription, index, name, description}) {
-  //{showDescription ? 'Hide Description' : 'Show Description'}
-
+export default function ButtonDescription({toggleDescription, showDescription, id, name, description}) {
   return (
     <Button role="button" onClick={toggleDescription}>
       <span>
-        {showDescription === index ? (
+        {showDescription === id ? (
           <AiFillCaretUp />
         ) : (
           <p>
@@ -18,7 +16,7 @@ export default function ButtonDescription({toggleDescription, showDescription, i
           </p>
         )}
       </span>
-      <Open showDescription={showDescription === index ? true : false}>{description}</Open>
+      <Open showDescription={showDescription === id ? true : false}>{description}</Open>
       <ScreenReaderOnly>description text about {name}</ScreenReaderOnly>
     </Button>
   );
@@ -31,9 +29,9 @@ const Button = styled.button`
   font-weight: 600;
   padding: 0;
   box-shadow: 0 0 2px 2px rgba(31, 31, 32, 0.1);
-  margin: .7rem;
+  margin: 0.7rem;
   color: var(--secondary-color);
- 
+  max-width: 15rem;
 `;
 const Open = styled.div`
   height: ${({showDescription}) => (showDescription ? '280px' : '0')};
