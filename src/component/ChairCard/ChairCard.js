@@ -45,9 +45,12 @@ const ChairDetails = styled.article`
 
   img {
     width: 170px;
-    height: 170px;
+    height: auto;
     border-radius: 50%;
     border: 2px solid #f2f3f6;
     padding: 5px;
+    aspect-ratio: 1 / 1;
+    
+    
   }
 `;
