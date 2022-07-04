@@ -53,16 +53,4 @@ const ChairDetails = styled.article`
   }
 `;
 
-const Description = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  border-radius: 0.8rem;
-  
-  margin: 0.5rem;
-  box-shadow: 0 0 2px 2px rgba(31, 31, 32, 0.1);
-  text-align: center;
-  gap: 2rem;
-
-`;
 

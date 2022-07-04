@@ -5,7 +5,7 @@ import ChairCard from './component/ChairCard/ChairCard';
 import data from './data.json';
 
 export default function App() {
-  const [chairsData, setChairsData] = useState(data);
+const chairsData = data;
   const [showDescription, setShowDescription] = useState(false);
 
   /* function toggleDescription(id) {
