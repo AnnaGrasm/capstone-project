@@ -19,9 +19,11 @@
     "test": "npm run test:unit"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.8.4",
     "mongoose": "^6.4.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-icons": "^4.4.0",
     "styled-component": "^2.8.0",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"

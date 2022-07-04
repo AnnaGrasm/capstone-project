@@ -1,4 +1,4 @@
-import { ButtonDescription } from "./ButtonDescription";
+import { ButtonDescription } from "../ButtonDescription/ButtonDescription";
 
 export function Default() {
 	return <ButtonDescription>Button</ButtonDescription>;
