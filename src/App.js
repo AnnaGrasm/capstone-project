@@ -1,21 +1,32 @@
+import {useState} from 'react';
 import styled from 'styled-components';
 
-import ChairCard from './component/ChairCard';
+import ChairCard from './component/ChairCard/ChairCard';
 import data from './data.json';
 
-
-
 export default function App() {
+  const chairsData = data;
+  const [showDescription, setShowDescription] = useState(false);
 
+  const toggleDescription = id => {
+    showDescription === id ? setShowDescription(false) : setShowDescription(id);
+  };
 
   return (
     <AppContainer>
       <h1>Find your perfect Design Chair</h1>
-      <MainContainer>
-        {data.map(item => (
-          <ChairCard key={item._id} name={item.name} mainImg={item.imgUrl} description={item.description} />
-        ))}
-      </MainContainer>
+
+      {chairsData.map(item => (
+        <ChairCard
+          key={item._id}
+          id={item._id}
+          name={item.name}
+          mainImg={item.imgUrl}
+          description={item.description}
+          toggleDescription={() => toggleDescription(item._id)}
+          showDescription={showDescription}
+        />
+      ))}
     </AppContainer>
   );
 }
@@ -26,14 +37,11 @@ const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: white;
-  
-`;
+  background-color: var(--primary-light-color);
 
-const MainContainer = styled.div`
-  max-width: 80%;
-  height: min-content;
-  background-color: var(--secondary-color);
-  
-  
-`
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+`;
