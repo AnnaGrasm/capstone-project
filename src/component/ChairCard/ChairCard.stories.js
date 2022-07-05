@@ -1,12 +1,12 @@
-import { ButtonDescription } from "../ButtonDescription/ButtonDescription";
+import ChairCard from "./ChairCard";
 
 export function Default() {
-	return <ButtonDescription>Button</ButtonDescription>;
+	return <ChairCard />;
 }
 
 const story = {
-	title: "Component/ButtonDescription",
-	component: ButtonDescription
+	title: "Component/ChairCard",
+	component: ChairCard
 };
 
 export default story;

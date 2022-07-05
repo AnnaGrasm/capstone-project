@@ -22,6 +22,8 @@ export default function App() {
           id={item._id}
           name={item.name}
           mainImg={item.imgUrl}
+          designerURL ={item.designerURL}
+          designer ={item.designer}
           description={item.description}
           toggleDescription={() => toggleDescription(item._id)}
           showDescription={showDescription}
