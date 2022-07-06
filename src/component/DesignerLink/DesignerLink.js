@@ -12,6 +12,7 @@ const Link = styled.a`
   text-decoration: none ;
   color: black;
   padding: 0 1rem;
+
   
   span {
     font-weight: 700;
