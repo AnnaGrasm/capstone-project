@@ -41,6 +41,7 @@ const AppContainer = styled.div`
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   min-height: 100vh;
   background-color: var(--primary-light-color);
 

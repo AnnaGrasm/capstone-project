@@ -46,7 +46,6 @@ export default function ChairCard({
 const ChairItem = styled.section`
   display: flex;
   flex-flow: column wrap;
-  margin: 0.5rem;
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
   width: 90vw;

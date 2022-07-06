@@ -26,6 +26,7 @@ const ImageContainer = styled.div`
     max-width: 200px;
     min-width: 200px;
     
+    
     @media (min-width: 500px) {
     max-width: 230px;
     min-width: 230px;
