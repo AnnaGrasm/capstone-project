@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import ButtonDescription from '../ButtonDescription/ButtonDescription';
 import DesignerLink from '../DesignerLink/DesignerLink';
+import InspirationImg from '../InspirationImg/InspirationImg';
 
 export default function ChairCard({
   name,
@@ -12,6 +13,9 @@ export default function ChairCard({
   toggleDescription,
   id,
   showDescription,
+  inspirationImg1,
+  inspirationImg2,
+  inspirationImg3,
 }) {
   return (
     <ChairItem role="chair-item">
@@ -30,6 +34,11 @@ export default function ChairCard({
           ></ButtonDescription>
         </div>
       </ChairDetails>
+      <InspirationImg
+        inspirationImg1={inspirationImg1}
+        inspirationImg2={inspirationImg2}
+        inspirationImg3={inspirationImg3}
+      />
     </ChairItem>
   );
 }
@@ -37,29 +46,35 @@ export default function ChairCard({
 const ChairItem = styled.section`
   display: flex;
   flex-flow: column wrap;
-  margin: 1rem;
-  gap: 1rem;
+  margin: 0.5rem;
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
+  
+
+  @media (min-width: 667px) {
+    width: 90vw;
+  }
 `;
 
 const ChairHeader = styled.header`
   font-size: 1.5rem;
   font-weight: 700;
+  padding: 1rem;
 `;
 
 const ChairDetails = styled.article`
   display: flex;
-  align-items: flex-start;
+  flex-flow: wrap column;
+  align-items: center;
   justify-content: space-around;
   margin-bottom: 1rem;
+  
 
   img {
-    width: 170px;
+    width: 15rem;
     height: auto;
     border-radius: 50%;
-    border: 2px solid #f2f3f6;
-    padding: 5px;
     aspect-ratio: 1 / 1;
+    padding: 1rem;
   }
 `;

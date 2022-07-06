@@ -22,11 +22,14 @@ export default function App() {
           id={item._id}
           name={item.name}
           mainImg={item.imgUrl}
-          designerURL ={item.designerURL}
-          designer ={item.designer}
+          designerURL={item.designerURL}
+          designer={item.designer}
           description={item.description}
           toggleDescription={() => toggleDescription(item._id)}
           showDescription={showDescription}
+          inspirationImg1={item.imgUrlAlternative1}
+          inspirationImg2={item.imgUrlAlternative2}
+          inspirationImg3={item.imgUrlAlternative3}
         />
       ))}
     </AppContainer>
