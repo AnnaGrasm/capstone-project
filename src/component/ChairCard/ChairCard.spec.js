@@ -3,14 +3,20 @@ import {render, screen} from '@testing-library/react';
 import ChairCard from './ChairCard';
 
 describe('ChairList', () => {
-  it('renders chair name, chair image und a button', () => {
-    render(<ChairCard name="Wishbone Chair" description="When designing the CH24 chair"  />);
+  it('renders chair name and chair image', () => {
+    render(<ChairCard name="Wishbone Chair" mainImg='./img/fauteuil-chair.jpeg'  />);
 
     const chairList = screen.getByRole('chair-item');
-    const img = screen.getByRole('img');
+    const imgChair= screen.getByRole('img', { name: 'Wishbone Chair' })
+    
     expect(chairList).toBeInTheDocument();
-    expect(img).toBeInTheDocument();
+    expect(imgChair).toBeInTheDocument();
+    expect(imgChair).toHaveAttribute('src', './img/fauteuil-chair.jpeg')
+    
+    
   });
+
+  
 
 
 });
