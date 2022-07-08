@@ -2,7 +2,7 @@ import {MdArrowBackIos} from 'react-icons/md';
 import {useParams, useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 
-import ChairCard from './ChairCard/ChairCard';
+import ChairCard from '../ChairCard/ChairCard';
 
 export default function ChairMapping({chairsData, toggleDescription, showDescription}) {
   const {name} = useParams();

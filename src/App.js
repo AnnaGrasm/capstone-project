@@ -2,7 +2,7 @@ import {useState} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import styled from 'styled-components';
 
-import ChairMapping from './component/ChairMapping';
+import ChairMapping from './component/ChairMapping/ChairMapping';
 import data from './data.json';
 import Home from './pages/Home';
 
