@@ -49,7 +49,6 @@ const ChairItem = styled.section`
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
   width: 90vw;
-  
 
   @media (min-width: 667px) {
     width: 90vw;
@@ -68,7 +67,6 @@ const ChairDetails = styled.article`
   align-items: center;
   justify-content: space-around;
   margin-bottom: 1rem;
-  
 
   img {
     width: 15rem;

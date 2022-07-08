@@ -12,7 +12,7 @@
     "imgUrlAlternative3": "./img/wishbone-chair-img3.jpeg",
     "description": "When designing the CH24 chair, Wegner wanted to combine the backrest and armrests into one single piece. To support the steam-bent top, he developed the classic Y-shaped back, which earned the chair the \" name\":  Wishbone. The end result was an elegant and graceful chair with seating comfort in a class of its own.",
     "material": "wood",
-    "style": ["scandinavian"],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["classic", "minimalistic", "modern"]
   },
@@ -29,7 +29,7 @@
     "imgUrlAlternative3": "./img/lounge-chair-img3.jpeg",
     "description": "The iconic Eames Lounge Chair, designed by Charles and Ray Eames in 1956, is a modern version of a traditional English club chair. The Eameses wanted to create an amply lounge chair combining ergonomics with top-quality \"material\"s and craftsmanship. It took several \"year\"s to develop a perfect lounge chair that would differ from a convenient club chair with a lighter, more elegant design and unbeatable comfortability.",
     "material": "leather",
-    "style": ["scandinavian", "mid-century"],
+    "style": "mid-century-modern",
     "type": "lounge chair",
     "characteristic": ["modern", "classic"]
   },
@@ -46,7 +46,7 @@
     "imgUrlAlternative3": "./img/masters-chair-img3.jpeg",
     "description": "The Masters chair by Philippe Starck and Eugeni Quitllet is a tribute to three iconic chairs: the Series 7 by Arne Jacobsen, the Tulip armchair by Eero Saarinen and the DSR chair (or Eiffel chair) by Charles and Ray Eames. The silhouette of each classic can be found from the back rest of the Masters chair. The slim legs give the chair a slender figure. The Masters chair is light, stackable and suitable for outdoor use.",
     "material": "plastic",
-    "style": ["contemporary"],
+    "style": "contemporary",
     "type": "dining chair",
     "characteristic": ["futuristic", "modern"]
   },
@@ -63,7 +63,7 @@
     "imgUrlAlternative3": "./img/tulip-chair-img3.jpeg",
     "description": "Finnish-American architect and designer Eero Saarinen famously hated the sight of many table and chair legs in a room, calling it an  \"ugly, confusing, unrestful world.\" In an attempt to streamline these necessary supports, Saarinen developed the Tulip collection, which trades four legs for one central pedestal, supporting a sculptural seat reminiscent of its namesake flower.",
     "material": "plastic",
-    "style": ["scandinavian", "mid-century"],
+    "style":  "mid-century-modern",
     "type": "dining chair",
     "characteristic": ["modern", "organic"]
   },
@@ -80,7 +80,7 @@
     "imgUrlAlternative3": "./img/panton-chair-img3.jpeg",
     "description": "In the 1960s, designer Verner Panton began to experiment with an innovative, new product: plastic. Captivated by its flexibility, the  Danish designer set about creating a seat that was more sculpture than furniture (but also extremely comfortable). The result is the cantilevered, S-shaped Panton chair, which was the first ever molded plastic chair when released by Swiss manufacturer Vitra in 1967. ",
     "material": "plastic",
-    "style": ["scandinavian"],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["futuristic", "modern"]
   },
@@ -97,7 +97,7 @@
     "imgUrlAlternative3": "./img/cesca-chair-img3.jpeg",
     "description": "In 1925, Hungarian-American designer Marcel Breuer introduced the first chair made from tubular steel, the Wassily. Three year's later, he (through Knoll) introduced the Cesca, a simplified design that marries traditional (the cane seat) and innovative (the cantilevered, steel base). The chair's s-shaped frame provides just enough bounce to make it comfortable without sacrificing support. The chair is in MoMA's permanent collection.",
     "material": "rattan",
-    "style": ["mid-century", "industrial"],
+    "style": "industrial",
     "type": "dining chair",
     "characteristic": ["classic"]
   },
@@ -114,7 +114,7 @@
     "imgUrlAlternative3": "./img/butterfly-chair-img3.jpeg",
     "description": "You probably had one in your dorm room, but did you know this folding chair has quite the design past? It was designed in Buenos Aires in 1938 by the design collective Grupo Austral, a group of three architects who met while working for Le Corbusier. The chair caught the attention of curators at MoMA, who requested a model. In 1947, Knoll began carrying it, swapping out the original black legs for polished chrome—but stopped production in 1951. Now, versions of the chair style can be found everywhere from CB2 to Target.",
     "material": "leather",
-    "style": ["industrial", "scandinavian"],
+    "style": "industrial",
     "type": "lounge chair",
     "characteristic": ["organic"]
   },
@@ -131,7 +131,7 @@
     "imgUrlAlternative3": "./img/womb-chair-img3.jpeg",
     "description": "Eero Saarinen style Womb Chair & Ottoman, designed in 1946.Named for the way it hugs the body, our Eero Saarinen style Womb Chair is a design icon. From its soft, inviting curves to its comfortable cushioning and tubular steel legs, every detail has been meticulously replicated. The chair is constructed from a fiberglass shell covered with foam and then encased in either softfabric or leather. The legs are made from shiny stainless steel. The chair comes in a wide choice of colours to suit every taste. The Eero Saarinen Womb Chair was made to curl up in, so position it in a place where you can truly relax.",
     "material": "fabric",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "lounge chair",
     "characteristic": ["cozy", "organic"]
   },
@@ -148,7 +148,7 @@
     "imgUrlAlternative3": "./img/barcelona-chair-img3.jpeg",
     "description": "The original Barcelona chair was designed with the goal to present Germany as a modern, cultural, and economic entity at the 1929 International Exhibition. The Barcelona chair quickly became an iconic modern classic design desired throughout the world. The Barcelona chair made extensive use of both leather piping and impressed buttons. The design drew inspiration from ancient folding chairs. This can clearly be seen where the frame meets in an x pattern almost looking as if it could fold up in position. The original frame was even designed to bolt together. In fact, it was not until 1950 that the frame was redesigned using solid stainless steel providing a smoother finished look. This Barcelona Chair Replica is a contemporary retake on a classic design which is ideal for your bedroom or office. This Barcelona Chair Replica has an angled seat that provides supreme relaxation.",
     "material": "leather",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "lounge chair",
     "characteristic": ["modern", "minimalistic"]
   },
@@ -165,7 +165,7 @@
     "imgUrlAlternative3": "./img/louis-ghost-chair-img3.jpeg",
     "description": "A ghost chair may sound like a cryptic piece of furniture, but they're actually quite attractive, and as a design, serve several practical purposes—none of which include scaring the bejesus out of you. As a more formal introduction, the original Ghost chair was officially named the Louis Ghost Chair, referencing another famous piece of furniture, the Louis XVI Chair. The ubiquitous armchair design was popularized during the infamous French king's reign, featuring an exposed wood frame with an upholstered seat, armrests, and round or square back.",
     "material": "plastic",
-    "style": ["contemporary"],
+    "style": "contemporary",
     "type": "dining chair",
     "characteristic": ["eclectic", "modern"],
     "art": "",
@@ -184,7 +184,7 @@
     "imgUrlAlternative3": "./img/serie-7-chair-img3.jpeg",
     "description": "The Series 7™ chair is an icon in modern furniture history, designed by Arne Jacobsen in 1955. Its unique shape is timeless and incredibly versatile, displaying character without overpowering the eye. This compression moulded veneer chair is the advanced version of the three-legged Ant Chair, which was designed by Arne Jacobsen as well in 1952. The four-legged, stackable chair of the Serie 7 collection could be seen as the climax of veneering technology.",
     "material": "wood",
-    "style": ["scandinavian"],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["minimalistic", "modern"]
   },
@@ -201,7 +201,7 @@
     "imgUrlAlternative3": "./img/wiggle-chair-img3.jpeg",
     "description": "In the 1970s, architect Frank Gehry began to experiment with scrap cardboard, an exercise that resulted in a collection of groundbreaking paper furniture. By alternating the cardboard's corrugation, Gehry was able to create stacks of it strong enough to support a human. The Wiggle's serpentine S-shape stands in contrast to its rough material.",
     "material": "cardboard",
-    "style": ["contemporary"],
+    "style": "contemporary",
     "type": "side chair",
     "characteristic": ["futuristic", "organic", "modern"]
   },
@@ -218,7 +218,7 @@
     "imgUrlAlternative3": "./img/zig-zag-chair-img3.jpeg",
     "description": "Designed by Gerrit Thomas Rietveld in 1934 and quickly deemed a design icon, the Zig Zag chair is one of the first examples of a cantilevered solid wood chair, formed by four flat pieces of wood joined in rhythmic sequence to create an extremely sophisticated appearance of instability.",
     "material": "wood",
-    "style": ["contemporary"],
+    "style": "contemporary",
     "type": "side chair",
     "characteristic": ["minimalistic"]
   },
@@ -235,7 +235,7 @@
     "imgUrlAlternative3": "./img/egg-chair-img3.jpeg",
     "description": "The Jacobsen Egg first appeared in the reception areas of the Royal Hotel, in Copenhagen. The commission to design every element of the hotel building as well as the furniture was Jacobsen's grand opportunity to put his theories of integrated design and architecture into practice. The Egg is one of the triumphs of Jacobsen's total design - a sculptural contrast to the building's almost exclusively vertical and horizontal surfaces.",
     "material": "leather",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "loungechair",
     "characteristic": ["organic", "futuristic"],
     "art": "pop art",
@@ -254,7 +254,7 @@
     "imgUrlAlternative3": "./img/diamond-chair-img3.jpeg",
     "description": "As one of many seats designed by Harry Bertoia for Knoll International from filigree steel wire mesh, the Diamond Chair from 1952 is perhaps the the most refined. And certainly the most successful member of the collection. Equally as impressive as the chair's legendary diamond form is the design, based as it is on a highly complex process in which the steel wire is hand drawn and welded.",
     "material": "steel",
-    "style": ["industrial"],
+    "style": "industrial",
     "type": "armchair",
     "characteristic": ["futuristic", "metalic"]
   },
@@ -272,7 +272,7 @@
     "imgUrlAlternative3": "./img/plastic-chair-img3.jpeg",
     "description": "Charles and Ray Eames adapted molding techniques developed during World War II to produce their classic shell chair's simple, gracious form. In 2001, Herman Miller reintroduced the original Eames Molded Plastic Chair (1950) in a durable, 100 percent recyclable polypropylene.",
     "material": "plastic",
-    "style": ["scandinavian"],
+    "style": "scandinavian",
     "type": "armchair",
     "characteristic": ["organic", "minimalistic"]
   },
@@ -289,7 +289,7 @@
     "imgUrlAlternative3": "./img/elbow-chair-img3.jpeg",
     "description": "For 58 years, Danish designer Hans Wegner conceived memorable, comfortable, stunning furniture for Carl Hansen & Søn, the same company that continues to produce his authentic works today. Known as the “chair-maker of chair-makers,” Wegner was a prolific designer with a unique ability to bring an elegant lightness to sturdy, long-lasting chairs that remains unmatched. After creating two prototypes of his stackable CH20 Elbow Chair (1956), he set the design aside in his archives, where it remained for nearly half a century until Carl Hansen & Søn decided to put it into production for the first time in 2005.",
     "material": "wood",
-    "style": ["scandinavian", "mid-century"],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["minimalistic", "modern"]
   },
@@ -306,7 +306,7 @@
     "imgUrlAlternative3": "./img/era-chair-img3.jpeg",
     "description": "Defined by its sturdy bentwood construction and organic form, the graceful, lightweight, and surprisingly strong Era Armchair (1859) has been in continuous production for more than 150 years. By making the chair back and rear legs from a single piece of curved wood, designer Michael Thonet, who perfected the bentwood process for chair-making, eliminated the need for expensive and time-consuming hand-carved joints.",
     "material": "wood",
-    "style": [""],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["classic"]
   },
@@ -323,7 +323,7 @@
     "imgUrlAlternative3": "./img/shell-chair-img3.jpeg",
     "description": "The CH07 Shell Chair, designed in 1963 by Hans J. Wegner, is an award winning classic of Danish design: combining ergonomics and functionality in an outstanding, visually impressive form. The Danish manufacturer Carl Hansen & Søn produces the characteristic shell-shaped chair crafted from pressed, robust oak in a variety of colour variations.",
     "material": "wood",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "lounge chair",
     "characteristic": ["modern"]
   },
@@ -340,7 +340,7 @@
     "imgUrlAlternative3": "./img/acapulco-chair-img3.png",
     "description": "Named after the legendary Pacific Resort Acapulco in Mexico, which served as a retreat from stressful Hollywood for stars and starlets in the 1950s, it was known not only for its fruity cocktails, but also for the wonderful sun terrace that overlooked Acapulco Bay. Elvis Presley, Elisabeth Taylor, and John Wayne are just a few names that fell in love with Acapulco during this time. The design of the Acapulco Chair has no copyrights and no original design plans which resulted in this design becoming the property of the entire world.",
     "material": "plastic",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "lounge chair",
     "characteristic": ["modern", "cozy"]
   },
@@ -357,7 +357,7 @@
     "imgUrlAlternative3": "./img/wassily-chair-img3.jpeg",
     "description": "Perhaps the most influential innovation in 20th century furniture design was the use of tubular steel. In 1925, the German-American architect Marcel Breuer began experimenting with this material and developed his armchair 'Wassily', which revolutionised the furniture design of its time. Not only for dark offices, where you can enjoy a soothing Scotch after work, but also in the bedroom, the 'Wassily' chair is conceivable.",
     "material": "leather",
-    "style": ["industrial", "mid-century"],
+    "style": "industrial",
     "type": "armchair",
     "characteristic": ["futuristic", "modern", "metalic"]
   },
@@ -374,7 +374,7 @@
     "imgUrlAlternative3": "./img/swan-chair-img3.jpeg",
     "description": "In fact, the shape of this lounge chair is reminiscent of a swan. Even if in a truly minimalist way. The beautiful Swan armchair was designed in 1958 by Arne Jacobsen for the lobby and lounge area of the SAS Royal Hotel in Copenhagen. The design does not contain any straight lines, so despite its simplicity and strong architectural look, it is organic and soft.",
     "material": "fabric",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "armchair",
     "characteristic": ["modern", "organic"]
   },
@@ -391,7 +391,7 @@
     "imgUrlAlternative3": "./img/ant-chair-img3.jpeg",
     "description": "The Ant Chair is a piece of furniture with a lot of personality and, by the way, world fame. It was designed by Arne Jacobsen in 1952 and consists of nine layers of compression moulded veneer. Ant' looks filigree and artistic, similar to the curves of a musical instrument. Its elegant form could almost hide its remarkable strength and comfort. Once seated, however, these qualities are clearly evident.",
     "material": "wood",
-    "style": ["mid-century"],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["minimalistic", "modern"]
   },
@@ -408,7 +408,7 @@
     "imgUrlAlternative3": "./img/lcw-chair-img3.jpeg",
     "description": "Honored by Time magazine as the Best Design of the 20th Century, the Lounge Chair Wood (LCW) began as an experiment, created via a machine that molded plywood with the help of heat and a bicycle pump. The resulting chair, as simple as it is comfortable, continues to revolutionize furniture production.",
     "material": "wood",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "side chair",
     "characteristic": ["modern"]
   },
@@ -426,7 +426,7 @@
     "imgUrlAlternative3": "./img/LC7-chair-img3.jpeg",
     "description": "Although the LC7 Swivel Chair is part of the Cassina LC Collection, its designer is not Le Corbusier, the designer who was largely responsible for the other furniture of the series, but his younger colleague Charlotte Perriand. Originally designed for Perriand's private apartment in Paris she however exhibited the round swivel chair at the 1929 Salon d'Automne together with the LC armchairs, sofas and tables: and thus it was added to the family.",
     "material": "leather",
-    "style": [""],
+    "style": "industrial",
     "type": "armchair",
     "characteristic": [""]
   },
@@ -444,7 +444,7 @@
     "imgUrlAlternative3": "./img/red-blue-chair-img1.jpeg",
     "description": "In Gerrit Rietveld's Red Blue chair, his affiliation with artist Piet Mondrian is apparent. Both were members of the De Stijl group, and Rietveld's geometric, primary-colored seat—originally designed in 1918 and colored in 1923—evokes Mondrian's paintings.",
     "material": "wood",
-    "style": [""],
+    "style": "",
     "type": "lounge chair",
     "characteristic": [""]
   },
@@ -461,7 +461,7 @@
     "imgUrlAlternative3": "./img/risom-chair-img3.jpeg",
     "description": "Designed in 1943, Jens Risom's lounge chair made the most of shortages from WWII by using surplus parachute straps as its woven seat. The tight basket weave make it both comfortable and supportive, while the simple wood frame gives it a timeless look. ",
     "material": "fabric",
-    "style": ["mid-century"],
+    "style": "mid-century-modern",
     "type": "lounge chair",
     "characteristic": [""]
   },
@@ -478,7 +478,7 @@
     "imgUrlAlternative3": "./img/drop-chair-img3.jpeg",
     "description": "The Drop chair was designed in 1958 by world-famous designer Arne Jacobsen for the longstanding furniture manufacturer Fritz Hansen. Jacobsen originally designed the chair for the Radisson Blu Royal Hotel in",
     "material": "plastic",
-    "style": [""],
+    "style": "scandinavian",
     "type": "dining chair",
     "characteristic": ["futuristic", "minimalistic"]
   },
@@ -495,7 +495,7 @@
     "imgUrlAlternative3": "./img/chair-one-img3.jpeg",
     "description": "The significance of Chair One derives from its striking linear form, the product of a logical examination of the necessary structure for a chair, reduced to its minimum elements. It is like a two-dimensional drawing of a chair, rendered into three dimensions. The angular, graphic aesthetic, like a wire-frame drawing, was quite new in the early 2000s and in part arose from the use of CAD (computer aided design). With Chair One the designer Konstantin Grcic introduced a new paradigm into the design vocabulary of contemporary furniture, that of the crystal or fractal, and influenced many other designers.",
     "material": "aluminium",
-    "style": ["contemporary"],
+    "style": "contemporary",
     "type": "side chair",
     "characteristic": ["futuristic", "metalic", "modern"]
   },
@@ -512,7 +512,7 @@
     "imgUrlAlternative3": "./img/fauteuil-chair-img3.jpeg",
     "description": "Fauteuil de Salon joins simple planes into a unified architectural object with a comfortable seat surface and backrest. Rediscovered in the archives of the French engineer Jean Prouvé, the armchair has been updated in a contemporary colour palette. With solid wood armrests and the designer's characteristic structural aesthetic, Fauteuil de Salon can be ideally combined with other pieces in the Prouvé Collection.",
     "material": "fabric",
-    "style": [""],
+    "style": "mid-century-modern",
     "type": "armchair",
     "characteristic": [""]
   }
