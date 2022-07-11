@@ -18,8 +18,6 @@ export default function ChairCard({
   inspirationImg3,
 }) {
   return (
-
-
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
       <DesignerLink designerURL={designerURL} designer={designer} />
