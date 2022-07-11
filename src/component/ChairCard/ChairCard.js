@@ -49,17 +49,17 @@ const ChairItem = styled.section`
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
   width: 90vw;
-  
 
   @media (min-width: 667px) {
     width: 90vw;
   }
 `;
 
-const ChairHeader = styled.header`
+const ChairHeader = styled.h2`
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem;
+  padding-left: 1rem;
+  color: var(--secondary-color);
 `;
 
 const ChairDetails = styled.article`
@@ -68,7 +68,6 @@ const ChairDetails = styled.article`
   align-items: center;
   justify-content: space-around;
   margin-bottom: 1rem;
-  
 
   img {
     width: 15rem;

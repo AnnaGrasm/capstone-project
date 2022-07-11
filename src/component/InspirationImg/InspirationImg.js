@@ -17,7 +17,6 @@ export default function InspirationImg({inspirationImg1, inspirationImg2, inspir
 const ImageContainer = styled.div`
   display: flex;
   margin: auto;
-
  
   img {
     border-radius: 10%;
