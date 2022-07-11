@@ -51,7 +51,6 @@ const HeadingContainer = styled.div`
     font-size: 2rem;
     font-weight: 700;
     line-height: normal;
-   
   }
   button {
     background-color: transparent;

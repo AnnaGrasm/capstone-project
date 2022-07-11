@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import ButtonDescription from '../ButtonDescription/ButtonDescription';
+import ButtonLike from '../ButtonLike/ButtonLike';
 import DesignerLink from '../DesignerLink/DesignerLink';
 import InspirationImg from '../InspirationImg/InspirationImg';
 
@@ -20,6 +21,7 @@ export default function ChairCard({
   return (
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
+      <ButtonLike />
       <DesignerLink designerURL={designerURL} designer={designer} />
       <ChairDetails>
         <img src={mainImg} alt={name} />
@@ -49,6 +51,7 @@ const ChairItem = styled.section`
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
   width: 90vw;
+  position: relative;
 
   @media (min-width: 667px) {
     width: 90vw;
