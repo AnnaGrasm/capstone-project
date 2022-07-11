@@ -11,7 +11,7 @@ export default function ButtonLike() {
 
   return (
     <>
-      <ButtonHeart onClick={toggleLike}>
+      <ButtonHeart onClick={toggleLike} aria-label='like'>
         {isLiked ? (
           <FaHeart style={{color: '#8d2c2c', fontSize: '2rem'}} />
         ) : (
