@@ -20,6 +20,8 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  position: absolute;
+  top: 1rem;
 `;
 const MainContainer = styled.nav`
   display: grid;

@@ -38,4 +38,5 @@ const AppContainer = styled.div`
   gap: 1rem;
   min-height: 100vh;
   background-color: var(--primary-light-color);
+  position: relative;
 `;
