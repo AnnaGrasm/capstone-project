@@ -9,15 +9,14 @@ export default function DesignerLink({designer, designerURL}) {
 }
 
 const Link = styled.a`
-  text-decoration: none ;
-  color: black;
+  text-decoration: none;
   padding: 0 1rem;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
 
-  
   span {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: underline;
   }
-
 `;

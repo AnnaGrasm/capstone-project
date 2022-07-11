@@ -1,13 +1,12 @@
 import {useState} from 'react';
-import { Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import styled from 'styled-components';
 
-import ChairMapping from './component/ChairMapping/ChairMapping';
-import data from './data.json';
+import ChairList from './component/ChairList/ChairList';
+import chairsData from './data.json';
 import Home from './pages/Home';
 
 export default function App() {
-  const chairsData = data;
   const [showDescription, setShowDescription] = useState(false);
 
   const toggleDescription = id => {
@@ -20,7 +19,11 @@ export default function App() {
         <Route
           path="/:name"
           element={
-            <ChairMapping chairsData={chairsData} showDescription={showDescription} toggleDescription={toggleDescription} />
+            <ChairList
+              chairsData={chairsData}
+              showDescription={showDescription}
+              toggleDescription={toggleDescription}
+            />
           }
         />
         <Route path="/" element={<Home />} />

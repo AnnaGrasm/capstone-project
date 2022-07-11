@@ -18,6 +18,8 @@ export default function ChairCard({
   inspirationImg3,
 }) {
   return (
+
+
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
       <DesignerLink designerURL={designerURL} designer={designer} />
@@ -55,10 +57,11 @@ const ChairItem = styled.section`
   }
 `;
 
-const ChairHeader = styled.header`
+const ChairHeader = styled.h2`
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem;
+  padding-left: 1rem;
+  color: var(--secondary-color);
 `;
 
 const ChairDetails = styled.article`

@@ -8,8 +8,8 @@ export default styled.createGlobalStyle`
     --primary-color: #b4a7a7;
     --primary-light-color: #ebe8e8;
     --secondary-color: #3e0c09;
-    --secondary-light-color: #b7d1b5;
-    --third-color: #0a6004;
+    --secondary-light-color: #782b27;
+    --third-color: #062b03;
 
    
   }
@@ -20,14 +20,9 @@ export default styled.createGlobalStyle`
   body {
     margin: 0;
     font-size: 1.125rem;
-
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    font-family: 'Bebas Neue', cursive;
   }
 
-  button,
-  input,
-  textarea {
-    font: inherit;
-  }
+
 `;
