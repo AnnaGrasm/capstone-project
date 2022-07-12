@@ -10,8 +10,8 @@ export default function ButtonLike() {
   }
 
   return (
-    <StyledButton onClick={toggleLike} aria-label="like">
-      <StyledHeartIcon $isLiked={isLiked} />
+    <StyledButton onClick={toggleLike}>
+      {isLiked ? <StyledHeartIcon active="true" /> : <StyledHeartIcon />}
     </StyledButton>
   );
 }
@@ -25,7 +25,7 @@ const StyledButton = styled.button`
 `;
 
 const StyledHeartIcon = styled(FaHeart)`
-  color: ${({$isLiked}) => ($isLiked ? '#662121' : '#e5cfcf')};
+  color: ${({active}) => (active ? '#662121' : '#e5cfcf')};
   font-size: 2rem;
 
 `;
