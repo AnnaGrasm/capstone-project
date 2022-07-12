@@ -3,17 +3,26 @@ import styled from 'styled-components';
 
 export default function Home() {
   return (
-    <>
+    <HomeContainer>
       <Heading>Find your perfect chair</Heading>
-      <MainContainer>
+      <NavigationContainer>
         <StyledLink to={`/industrial`}>Industrial</StyledLink>
         <StyledLink to={`/scandinavian`}>Scandinavian</StyledLink>
         <StyledLink to={`/contemporary`}>Contemporary</StyledLink>
         <StyledLink to={`/mid-century-modern`}>Mid-Century Modern</StyledLink>
-      </MainContainer>
-    </>
+      </NavigationContainer>
+    </HomeContainer>
   );
 }
+
+const HomeContainer = styled.main`
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+`;
 
 const Heading = styled.h1`
   font-size: 2rem;
@@ -23,7 +32,7 @@ const Heading = styled.h1`
   position: absolute;
   top: 1rem;
 `;
-const MainContainer = styled.nav`
+const NavigationContainer = styled.nav`
   display: grid;
   grid-template-columns: 10rem 10rem;
   grid-template-rows: 10rem 10rem;

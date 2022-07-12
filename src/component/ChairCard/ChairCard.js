@@ -5,41 +5,42 @@ import ButtonLike from '../ButtonLike/ButtonLike';
 import DesignerLink from '../DesignerLink/DesignerLink';
 import InspirationImg from '../InspirationImg/InspirationImg';
 
-export default function ChairCard({
-  name,
-  mainImg,
-  description,
-  designerURL,
-  designer,
-  toggleDescription,
-  id,
-  showDescription,
-  inspirationImg1,
-  inspirationImg2,
-  inspirationImg3,
-}) {
+export default function ChairCard({chair, toggleDescription, showDescription}) {
+  
+  const {
+    name,
+    designerURL,
+    description,
+    designer,
+    imgUrl,
+    _id,
+    imgUrlAlternative1,
+    imgUrlAlternative2,
+    imgUrlAlternative3,
+  } = chair;
+
   return (
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
       <ButtonLike />
       <DesignerLink designerURL={designerURL} designer={designer} />
       <ChairDetails>
-        <img src={mainImg} alt={name} />
+        <img src={imgUrl} alt={name} />
 
         <div>
           <ButtonDescription
             toggleDescription={toggleDescription}
             showDescription={showDescription}
             name={name}
-            id={id}
+            id={_id}
             description={description}
           ></ButtonDescription>
         </div>
       </ChairDetails>
       <InspirationImg
-        inspirationImg1={inspirationImg1}
-        inspirationImg2={inspirationImg2}
-        inspirationImg3={inspirationImg3}
+        inspirationImg1={imgUrlAlternative1}
+        inspirationImg2={imgUrlAlternative2}
+        inspirationImg3={imgUrlAlternative3}
       />
     </ChairItem>
   );
@@ -48,14 +49,10 @@ export default function ChairCard({
 const ChairItem = styled.section`
   display: flex;
   flex-flow: column wrap;
-  border: solid 4px var(--secondary-color);
-  background-color: var(--primary-color);
   width: 90vw;
   position: relative;
-
-  @media (min-width: 667px) {
-    width: 90vw;
-  }
+  border: solid 4px var(--secondary-color);
+  background-color: var(--primary-color);
 `;
 
 const ChairHeader = styled.h2`

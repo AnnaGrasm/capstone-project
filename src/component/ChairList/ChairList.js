@@ -18,21 +18,13 @@ export default function ChairList({chairsData, toggleDescription, showDescriptio
       </HeadingContainer>
       <ChairContainer>
         {chairsData
-          .filter(item => name === item.style)
-          .map(item => (
+          .filter(chair => name === chair.style)
+          .map(chair => (
             <ChairCard
-              key={item._id}
-              id={item._id}
-              name={item.name}
-              mainImg={item.imgUrl}
-              designerURL={item.designerURL}
-              designer={item.designer}
-              description={item.description}
-              toggleDescription={() => toggleDescription(item._id)}
-              showDescription={showDescription}
-              inspirationImg1={item.imgUrlAlternative1}
-              inspirationImg2={item.imgUrlAlternative2}
-              inspirationImg3={item.imgUrlAlternative3}
+            chair={chair}
+               key={chair._id}
+               toggleDescription={() => toggleDescription(chair._id)}
+               showDescription={showDescription}
             />
           ))}
       </ChairContainer>

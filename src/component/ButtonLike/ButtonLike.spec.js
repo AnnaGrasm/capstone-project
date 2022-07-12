@@ -9,7 +9,7 @@ describe('ButtonLike', () => {
 
     render(<ButtonLike toggleLike={mockCallback} />);
 
-    const button = screen.getByLabelText('like');
+    const button = screen.getByRole('button');
 
     userEvent.click(button);
 

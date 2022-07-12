@@ -10,22 +10,22 @@ export default function ButtonLike() {
   }
 
   return (
-    <>
-      <ButtonHeart onClick={toggleLike} aria-label='like'>
-        {isLiked ? (
-          <FaHeart style={{color: '#8d2c2c', fontSize: '2rem'}} />
-        ) : (
-          <FaHeart style={{color: '#f0e2eb', fontSize: '2rem'}} />
-        )}
-      </ButtonHeart>
-    </>
+    <StyledButton onClick={toggleLike} aria-label="like">
+      <StyledHeartIcon $isLiked={isLiked} />
+    </StyledButton>
   );
 }
 
-const ButtonHeart = styled.button`
+const StyledButton = styled.button`
   position: absolute;
   right: 0.5rem;
   top: 1rem;
   background: transparent;
   border: none;
+`;
+
+const StyledHeartIcon = styled(FaHeart)`
+  color: ${({$isLiked}) => ($isLiked ? '#662121' : '#e5cfcf')};
+  font-size: 2rem;
+
 `;

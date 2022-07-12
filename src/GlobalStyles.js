@@ -10,8 +10,6 @@ export default styled.createGlobalStyle`
     --secondary-color: #3e0c09;
     --secondary-light-color: #782b27;
     --third-color: #062b03;
-
-   
   }
   * {
     box-sizing: border-box;
@@ -22,7 +20,6 @@ export default styled.createGlobalStyle`
     font-size: 1.125rem;
     line-height: 1.5;
     font-family: 'Bebas Neue', cursive;
+    background-color: var(--primary-light-color);
   }
-
-
 `;
