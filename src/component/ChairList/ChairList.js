@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import ChairCard from '../ChairCard/ChairCard';
 
-export default function ChairList({chairsData, toggleDescription, showDescription}) {
+export default function ChairList({chairsData, toggleDescription, showDescription, setFavoriteChair}) {
   const {name} = useParams();
   let navigate = useNavigate();
 
@@ -25,6 +25,7 @@ export default function ChairList({chairsData, toggleDescription, showDescriptio
             key={chair._id}
             toggleDescription={() => toggleDescription(chair._id)}
             showDescription={showDescription}
+            setFavoriteChair={setFavoriteChair}
           />
         ))}
     </ChairContainer>

@@ -1,13 +1,11 @@
-import {useState} from 'react';
+
 import {FaHeart} from 'react-icons/fa';
 import styled from 'styled-components';
 
-export default function ButtonLike() {
-  const [isLiked, setIsLiked] = useState(false);
+export default function ButtonLike({toggleLike, isLiked}) {
+  
 
-  function toggleLike() {
-    setIsLiked(!isLiked);
-  }
+
 
   return (
     <StyledButton onClick={toggleLike}>

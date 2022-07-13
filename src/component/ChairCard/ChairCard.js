@@ -1,12 +1,16 @@
+import {useState} from 'react';
 import styled from 'styled-components';
+
 
 import ButtonDescription from '../ButtonDescription/ButtonDescription';
 import ButtonLike from '../ButtonLike/ButtonLike';
 import DesignerLink from '../DesignerLink/DesignerLink';
 import InspirationImg from '../InspirationImg/InspirationImg';
 
-export default function ChairCard({chair, toggleDescription, showDescription}) {
+export default function ChairCard({chair, toggleDescription, showDescription, setFavoriteChair}) {
+  const [isLiked, setIsLiked] = useState(false);
   
+   
   const {
     name,
     designerURL,
@@ -19,10 +23,17 @@ export default function ChairCard({chair, toggleDescription, showDescription}) {
     imgUrlAlternative3,
   } = chair;
 
+  function toggleLike() {
+    setIsLiked(!isLiked);
+    setFavoriteChair({...chair})
+  }
+
+
+
   return (
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
-      <ButtonLike />
+      <ButtonLike toggleLike={toggleLike} isLiked={isLiked}/>
       <DesignerLink designerURL={designerURL} designer={designer} />
       <ChairDetails>
         <img src={imgUrl} alt={name} />
