@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-export default function Favorite({likePage}) {
+export default function Favorite({favoriteChair}) {
+    
+    console.log(favoriteChair)
 
   return (
      
-     
+
 
     <HeadingContainer>
-       <h1>{likePage}</h1> 
+
     </HeadingContainer>
    
    

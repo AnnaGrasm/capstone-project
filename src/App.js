@@ -15,8 +15,7 @@ export default function App() {
   const toggleDescription = id => {
     showDescription === id ? setShowDescription(false) : setShowDescription(id);
   };
-
-  console.log(favoriteChair)
+ console.log(favoriteChair)
 
   return (
     <>
