@@ -25,7 +25,7 @@ export default function ChairCard({chair, toggleDescription, showDescription, se
 
   function toggleLike() {
     setIsLiked(!isLiked);
-    setFavoriteChair([{...chair}])
+    setFavoriteChair(isLiked ? [{...chair}] : "")
   }
 
 
