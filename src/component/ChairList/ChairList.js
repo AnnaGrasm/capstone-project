@@ -4,9 +4,11 @@ import styled from 'styled-components';
 
 import ChairCard from '../ChairCard/ChairCard';
 
-export default function ChairList({chairsData, toggleDescription, showDescription, setFavoriteChair}) {
+export default function ChairList({chairsData, toggleDescription, showDescription, setFavoriteChair, toggleLike, isLiked}) {
   const {name} = useParams();
   let navigate = useNavigate();
+
+  const filteredChairs = name === "favorite" ? chairsData.filter(chair => chair.isLiked === true) : chairsData.filter(chair => name === chair.style)
 
   return (
     <ChairContainer>
@@ -17,8 +19,7 @@ export default function ChairList({chairsData, toggleDescription, showDescriptio
         <h1>{name} chairs</h1>
       </HeadingContainer>
 
-      {chairsData
-        .filter(chair => name === chair.style)
+      {filteredChairs
         .map(chair => (
           <ChairCard
             chair={chair}
@@ -26,6 +27,8 @@ export default function ChairList({chairsData, toggleDescription, showDescriptio
             toggleDescription={() => toggleDescription(chair._id)}
             showDescription={showDescription}
             setFavoriteChair={setFavoriteChair}
+            toggleLike={toggleLike}
+            
           />
         ))}
     </ChairContainer>

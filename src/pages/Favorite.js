@@ -1,14 +1,26 @@
+import {useParams, useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 
-export default function Favorite({favoriteChair}) {
+import ChairCard from '../component/ChairCard/ChairCard';
+
+
+
+export default function Favorite({favoriteChair, chairsData, isLiked}) {
+    const {like} = useParams();
+    let navigate = useNavigate();
     
-    console.log(favoriteChair)
 
   return (
      
 
 
     <HeadingContainer>
+      
+        
+        <h1> chairs</h1>
+    
+
+     
 
     </HeadingContainer>
    

@@ -6,10 +6,10 @@ export default function Home() {
     <HomeContainer>
       <Heading>Find your perfect chair</Heading>
       <NavigationContainer>
-        <StyledLink to={`/industrial`}>Industrial</StyledLink>
-        <StyledLink to={`/scandinavian`}>Scandinavian</StyledLink>
-        <StyledLink to={`/contemporary`}>Contemporary</StyledLink>
-        <StyledLink to={`/mid-century-modern`}>Mid-Century Modern</StyledLink>
+        <StyledLink to={`/chairs/industrial`}>Industrial</StyledLink>
+        <StyledLink to={`/chairs/scandinavian`}>Scandinavian</StyledLink>
+        <StyledLink to={`/chairs/contemporary`}>Contemporary</StyledLink>
+        <StyledLink to={`/chairs/mid-century-modern`}>Mid-Century Modern</StyledLink>
       </NavigationContainer>
     </HomeContainer>
   );

@@ -7,8 +7,8 @@ import ButtonLike from '../ButtonLike/ButtonLike';
 import DesignerLink from '../DesignerLink/DesignerLink';
 import InspirationImg from '../InspirationImg/InspirationImg';
 
-export default function ChairCard({chair, toggleDescription, showDescription, setFavoriteChair}) {
-  const [isLiked, setIsLiked] = useState(false);
+export default function ChairCard({chair, toggleDescription, showDescription, toggleLike}) {
+
   
    
   const {
@@ -21,19 +21,17 @@ export default function ChairCard({chair, toggleDescription, showDescription, se
     imgUrlAlternative1,
     imgUrlAlternative2,
     imgUrlAlternative3,
+    isLiked
   } = chair;
 
-  function toggleLike() {
-    setIsLiked(!isLiked);
-    setFavoriteChair(isLiked ? [{...chair}] : "")
-  }
+ 
 
 
 
   return (
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
-      <ButtonLike toggleLike={toggleLike} isLiked={isLiked}/>
+      <ButtonLike toggleLike={()=>toggleLike(_id)} isLiked={isLiked}/>
       <DesignerLink designerURL={designerURL} designer={designer} />
       <ChairDetails>
         <img src={imgUrl} alt={name} />

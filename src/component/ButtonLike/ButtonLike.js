@@ -9,7 +9,7 @@ export default function ButtonLike({toggleLike, isLiked}) {
 
   return (
     <StyledButton onClick={toggleLike}>
-      {isLiked ? <StyledHeartIcon active="true" /> : <StyledHeartIcon />}
+      {isLiked ? <StyledHeartIcon active="active" /> : <StyledHeartIcon />}
     </StyledButton>
   );
 }

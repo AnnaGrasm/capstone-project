@@ -11,7 +11,7 @@ export default function FooterNav() {
           <AiFillHome />
         </Link>
 
-        <Link to="/favorite" >
+        <Link to="/chairs/favorite" >
           <FaHeart />
         </Link>
       </NavContainer>
