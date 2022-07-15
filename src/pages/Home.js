@@ -6,10 +6,10 @@ export default function Home() {
     <HomeContainer>
       <Heading>Find your perfect chair</Heading>
       <NavigationContainer>
-        <StyledLink to={`/industrial`}>Industrial</StyledLink>
-        <StyledLink to={`/scandinavian`}>Scandinavian</StyledLink>
-        <StyledLink to={`/contemporary`}>Contemporary</StyledLink>
-        <StyledLink to={`/mid-century-modern`}>Mid-Century Modern</StyledLink>
+        <StyledLink to={`/chairs/industrial`}>Industrial</StyledLink>
+        <StyledLink to={`/chairs/scandinavian`}>Scandinavian</StyledLink>
+        <StyledLink to={`/chairs/contemporary`}>Contemporary</StyledLink>
+        <StyledLink to={`/chairs/mid-century-modern`}>Mid-Century Modern</StyledLink>
       </NavigationContainer>
     </HomeContainer>
   );
@@ -18,7 +18,6 @@ export default function Home() {
 const HomeContainer = styled.main`
   display: flex;
   flex-flow: wrap column;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   min-height: 100vh;
@@ -29,8 +28,6 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  position: absolute;
-  top: 1rem;
 `;
 const NavigationContainer = styled.nav`
   display: grid;

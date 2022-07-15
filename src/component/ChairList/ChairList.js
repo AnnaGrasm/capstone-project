@@ -4,9 +4,11 @@ import styled from 'styled-components';
 
 import ChairCard from '../ChairCard/ChairCard';
 
-export default function ChairList({chairsData, toggleDescription, showDescription}) {
+export default function ChairList({chairs, toggleDescription, showDescription, toggleLike}) {
   const {name} = useParams();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+
+  const filteredChairs = name ? chairs.filter(chair => name === chair.style) : chairs;
 
   return (
     <ChairContainer>
@@ -14,19 +16,18 @@ export default function ChairList({chairsData, toggleDescription, showDescriptio
         <button onClick={() => navigate('/')}>
           <StyledBackButtonIcon />
         </button>
-        <h1>{name} chairs</h1>
+        <h1>{name ? `${name}` : 'Favorite'} Chairs</h1>
       </HeadingContainer>
 
-      {chairsData
-        .filter(chair => name === chair.style)
-        .map(chair => (
-          <ChairCard
-            chair={chair}
-            key={chair._id}
-            toggleDescription={() => toggleDescription(chair._id)}
-            showDescription={showDescription}
-          />
-        ))}
+      {filteredChairs.map(chair => (
+        <ChairCard
+          chair={chair}
+          key={chair._id}
+          toggleDescription={() => toggleDescription(chair._id)}
+          showDescription={showDescription}
+          toggleLike={toggleLike}
+        />
+      ))}
     </ChairContainer>
   );
 }
@@ -41,6 +42,7 @@ const HeadingContainer = styled.div`
     font-weight: 600;
     line-height: normal;
   }
+
   button {
     background-color: transparent;
     border: none;
@@ -54,6 +56,10 @@ const ChairContainer = styled.div`
   gap: 1rem;
   margin-bottom: 2rem;
   background-color: var(--primary-light-color);
+
+  @media (min-width: 600px) {
+    width: 90vw;
+  }
 `;
 
 const StyledBackButtonIcon = styled(MdArrowBackIos)`
