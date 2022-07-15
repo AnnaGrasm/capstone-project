@@ -1,6 +1,4 @@
-import {useState} from 'react';
 import styled from 'styled-components';
-
 
 import ButtonDescription from '../ButtonDescription/ButtonDescription';
 import ButtonLike from '../ButtonLike/ButtonLike';
@@ -8,9 +6,6 @@ import DesignerLink from '../DesignerLink/DesignerLink';
 import InspirationImg from '../InspirationImg/InspirationImg';
 
 export default function ChairCard({chair, toggleDescription, showDescription, toggleLike}) {
-
-  
-   
   const {
     name,
     designerURL,
@@ -21,17 +16,13 @@ export default function ChairCard({chair, toggleDescription, showDescription, to
     imgUrlAlternative1,
     imgUrlAlternative2,
     imgUrlAlternative3,
-    isLiked
+    isLiked,
   } = chair;
-
- 
-
-
 
   return (
     <ChairItem role="chair-item">
       <ChairHeader>{name}</ChairHeader>
-      <ButtonLike toggleLike={()=>toggleLike(_id)} isLiked={isLiked}/>
+      <ButtonLike toggleLike={() => toggleLike(_id)} isLiked={isLiked} />
       <DesignerLink designerURL={designerURL} designer={designer} />
       <ChairDetails>
         <img src={imgUrl} alt={name} />
@@ -59,9 +50,14 @@ const ChairItem = styled.section`
   display: flex;
   flex-flow: column wrap;
   width: 90vw;
+  margin-bottom: 4rem;
   position: relative;
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
+
+  @media (min-width: 600px) {
+    width: 90%;
+  }
 `;
 
 const ChairHeader = styled.h2`

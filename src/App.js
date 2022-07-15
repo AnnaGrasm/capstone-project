@@ -3,36 +3,30 @@ import {Routes, Route} from 'react-router-dom';
 
 import ChairList from './component/ChairList/ChairList';
 import FooterNav from './component/FooterNav';
-import chairs from './data.json';
-import Favorite from './pages/Favorite';
+import chairsData from './data.json';
 import Home from './pages/Home';
 
 export default function App() {
   const [showDescription, setShowDescription] = useState(false);
-  // const [isLiked, setIsLiked] = useState(false);
-  // const [favoriteChair, setFavoriteChair] = useState([])
-
-  const [chairsData, setChairsData] = useState(chairs);
+  const [chairs, setChairs] = useState(chairsData);
 
   //This function shows a discription text for one card. If a description text for another card clicked, the first one will close automatically !
   const toggleDescription = id => {
     showDescription === id ? setShowDescription(false) : setShowDescription(id);
   };
 
+  const likedChairs = chairs.filter(chair => chair.isLiked);
+
   function toggleLike(id) {
-
-    const index = chairsData.findIndex(chair => chair._id === id);
-    const newFavorite = chairsData.find(chair=> chair._id === id);
+    const index = chairs.findIndex(chair => chair._id === id);
+    const newFavorite = chairs.find(chair => chair._id === id);
     const tempFavorites = [
-      ...chairsData.slice(0, index),
+      ...chairs.slice(0, index),
       {...newFavorite, isLiked: !newFavorite.isLiked},
-      ...chairsData.slice(index + 1),
+      ...chairs.slice(index + 1),
     ];
-setChairsData(tempFavorites)
+    setChairs(tempFavorites);
   }
-
-
-  console.log(chairsData);
 
   return (
     <>
@@ -43,14 +37,24 @@ setChairsData(tempFavorites)
           path="/chairs/:name"
           element={
             <ChairList
-              chairsData={chairsData}
+              chairs={chairs}
               showDescription={showDescription}
               toggleDescription={toggleDescription}
               toggleLike={toggleLike}
             />
           }
         />
-        
+        <Route
+          path="/favorites"
+          element={
+            <ChairList
+              chairs={likedChairs}
+              showDescription={showDescription}
+              toggleDescription={toggleDescription}
+              toggleLike={toggleLike}
+            />
+          }
+        />
       </Routes>
     </>
   );

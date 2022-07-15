@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 import ChairCard from '../ChairCard/ChairCard';
 
-export default function ChairList({chairsData, toggleDescription, showDescription, setFavoriteChair, toggleLike, isLiked}) {
+export default function ChairList({chairs, toggleDescription, showDescription, setFavoriteChair, toggleLike}) {
   const {name} = useParams();
   let navigate = useNavigate();
 
-  const filteredChairs = name === "favorite" ? chairsData.filter(chair => chair.isLiked === true) : chairsData.filter(chair => name === chair.style)
+  const filteredChairs = name ? chairs.filter(chair => name === chair.style) : chairs;
 
   return (
     <ChairContainer>
@@ -16,21 +16,19 @@ export default function ChairList({chairsData, toggleDescription, showDescriptio
         <button onClick={() => navigate('/')}>
           <StyledBackButtonIcon />
         </button>
-        <h1>{name} chairs</h1>
+        {name ? <h1>{name} chairs</h1> : <h1>Favorite Chairs</h1>}
       </HeadingContainer>
 
-      {filteredChairs
-        .map(chair => (
-          <ChairCard
-            chair={chair}
-            key={chair._id}
-            toggleDescription={() => toggleDescription(chair._id)}
-            showDescription={showDescription}
-            setFavoriteChair={setFavoriteChair}
-            toggleLike={toggleLike}
-            
-          />
-        ))}
+      {filteredChairs.map(chair => (
+        <ChairCard
+          chair={chair}
+          key={chair._id}
+          toggleDescription={() => toggleDescription(chair._id)}
+          showDescription={showDescription}
+          setFavoriteChair={setFavoriteChair}
+          toggleLike={toggleLike}
+        />
+      ))}
     </ChairContainer>
   );
 }
@@ -45,6 +43,7 @@ const HeadingContainer = styled.div`
     font-weight: 600;
     line-height: normal;
   }
+
   button {
     background-color: transparent;
     border: none;
@@ -58,6 +57,10 @@ const ChairContainer = styled.div`
   gap: 1rem;
   margin-bottom: 2rem;
   background-color: var(--primary-light-color);
+
+  @media (min-width: 600px) {
+    width: 90vw;
+  }
 `;
 
 const StyledBackButtonIcon = styled(MdArrowBackIos)`

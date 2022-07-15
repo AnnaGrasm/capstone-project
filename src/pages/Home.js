@@ -18,7 +18,6 @@ export default function Home() {
 const HomeContainer = styled.main`
   display: flex;
   flex-flow: wrap column;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   min-height: 100vh;
@@ -29,8 +28,6 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  position: absolute;
-  top: 1rem;
 `;
 const NavigationContainer = styled.nav`
   display: grid;
