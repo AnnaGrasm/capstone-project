@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export default function FooterNav() {
   return (
     <NavStyledContainer>
-      <StyledNavLink to="/" aria-label="home">
+      <StyledNavLink to="/home" aria-label="home">
         <StyledHomeIcon />
       </StyledNavLink>
 

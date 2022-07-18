@@ -6,6 +6,7 @@ import FooterNav from './component/FooterNav';
 import chairsData from './data.json';
 import {setToLocal, getFromLocal} from './lib/localStorage.js';
 import Home from './pages/Home';
+import SplashScreen from './pages/SplashScreen';
 
 export default function App() {
   const [showDescription, setShowDescription] = useState(false);
@@ -33,9 +34,10 @@ export default function App() {
 
   return (
     <>
-      <FooterNav />
+      
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<SplashScreen />} />
+        <Route path="/home" element={<Home />} />
         <Route
           path="/chairs/:name"
           element={

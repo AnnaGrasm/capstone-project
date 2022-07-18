@@ -1,9 +1,12 @@
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
+import FooterNav from '../component/FooterNav';
+
 export default function Home() {
   return (
     <HomeContainer>
+      <FooterNav />
       <Heading>Find your perfect chair</Heading>
       <NavigationContainer>
         <StyledLink to={`/chairs/industrial`}>Industrial</StyledLink>

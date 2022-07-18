@@ -3,6 +3,7 @@ import {useParams, useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 
 import ChairCard from '../ChairCard/ChairCard';
+import FooterNav from '../FooterNav';
 
 export default function ChairList({chairs, toggleDescription, showDescription, toggleLike}) {
   const {name} = useParams();
@@ -12,8 +13,9 @@ export default function ChairList({chairs, toggleDescription, showDescription, t
 
   return (
     <ChairContainer>
+      <FooterNav />
       <HeadingContainer>
-        <button onClick={() => navigate('/')}>
+        <button onClick={() => navigate('/home')}>
           <StyledBackButtonIcon />
         </button>
         <h1>{name ? `${name}` : 'Favorite'} Chairs</h1>
