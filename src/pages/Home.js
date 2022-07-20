@@ -54,7 +54,6 @@ const NavigationContainer = styled.nav`
 `;
 const StyledLink = styled(Link)`
   padding: 0.5rem;
-  border: none;
   text-decoration: none;
   font-size: 1.3rem;
   color: white;
