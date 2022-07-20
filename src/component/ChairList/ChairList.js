@@ -21,15 +21,22 @@ export default function ChairList({chairs, toggleDescription, showDescription, t
         <StyledLogo src="../img/Logo2.svg" alt="logo" />
       </HeadingContainer>
 
-      {filteredChairs.map(chair => (
-        <ChairCard
-          chair={chair}
-          key={chair._id}
-          toggleDescription={() => toggleDescription(chair._id)}
-          showDescription={showDescription}
-          toggleLike={toggleLike}
-        />
-      ))}
+      {!filteredChairs.length ? (
+        <StyledEmptyPage>
+          <h2>OH!</h2>
+          <p>You have no favorite chair yet</p>
+        </StyledEmptyPage>
+      ) : (
+        filteredChairs.map(chair => (
+          <ChairCard
+            chair={chair}
+            key={chair._id}
+            toggleDescription={() => toggleDescription(chair._id)}
+            showDescription={showDescription}
+            toggleLike={toggleLike}
+          />
+        ))
+      )}
       <FooterNav />
     </ChairContainer>
   );
@@ -57,11 +64,26 @@ const HeadingContainer = styled.div`
 `;
 const StyledBackButton = styled(AiOutlineLeft)`
   font-size: 1.7rem;
-  
 `;
 const StyledLogo = styled.img`
   width: 3rem;
 `;
+
+const StyledEmptyPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2{
+    font-size: 2rem;
+    font-weight: 700; 
+  }
+  p{
+    font-size: 1.5rem;
+    font-weight: 700; 
+  }
+`
 
 const ChairContainer = styled.div`
   display: flex;

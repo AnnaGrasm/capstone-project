@@ -6,10 +6,9 @@ import FooterNav from '../component/FooterNav';
 export default function Home() {
   return (
     <HomeContainer>
-      
       <StyledHeading>
         <h1>Choose your style</h1>
-      <img src="../img/Logo2.svg" alt="logo" />
+        <img src="../img/Logo2.svg" alt="logo" />
       </StyledHeading>
       <NavigationContainer>
         <StyledLink to={`/chairs/industrial`}>Industrial</StyledLink>
@@ -31,21 +30,18 @@ const HomeContainer = styled.main`
 `;
 
 export const StyledHeading = styled.div`
-display: flex;
-width: 90vw;
-justify-content: center;
-gap: 3rem;
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  gap: 3rem;
 
-
-h1{
-  font-size: 2rem;
-  font-weight: 700;
-
-}
-img{
-  width: 3rem;
-}
- 
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  img {
+    width: 3rem;
+  }
 `;
 const NavigationContainer = styled.nav`
   display: grid;

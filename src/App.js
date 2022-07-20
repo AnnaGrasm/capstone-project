@@ -18,7 +18,7 @@ export default function App() {
     showDescription === id ? setShowDescription(false) : setShowDescription(id);
   };
 
-  const likedChairs = chairs.filter(chair => chair.isLiked);
+  const likedChairs = chairs.filter(chair => chair.isLiked );
 
   function toggleLike(id) {
     const index = chairs.findIndex(chair => chair._id === id);

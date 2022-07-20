@@ -56,7 +56,7 @@ const ChairItem = styled.section`
   background-color: var(--primary-color);
 
   @media (min-width: 600px) {
-    width: 90%;
+    width: 0%;
   }
 `;
 
