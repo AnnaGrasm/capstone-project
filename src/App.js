@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react';
 import {Routes, Route} from 'react-router-dom';
 
 import ChairList from './component/ChairList/ChairList';
-import FooterNav from './component/FooterNav';
 import chairsData from './data.json';
 import {setToLocal, getFromLocal} from './lib/localStorage.js';
 import Home from './pages/Home';
@@ -34,9 +33,8 @@ export default function App() {
 
   return (
     <>
-      
       <Routes>
-      <Route path="/" element={<SplashScreen />} />
+        <Route path="/" element={<SplashScreen />} />
         <Route path="/home" element={<Home />} />
         <Route
           path="/chairs/:name"

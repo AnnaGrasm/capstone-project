@@ -58,8 +58,9 @@ const NavStyledContainer = styled.nav`
     grid-template-columns: auto;
     width: 10%;
     right: 0;
+    top: 20%;
     bottom: unset;
-    height: 90%;
+    height: 70%;
   }
 `;
 

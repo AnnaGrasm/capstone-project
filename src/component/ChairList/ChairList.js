@@ -1,4 +1,4 @@
-import {MdArrowBackIos} from 'react-icons/md';
+import {AiOutlineLeft} from 'react-icons/ai';
 import {useParams, useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -13,12 +13,12 @@ export default function ChairList({chairs, toggleDescription, showDescription, t
 
   return (
     <ChairContainer>
-      <FooterNav />
       <HeadingContainer>
         <button onClick={() => navigate('/home')}>
-          <StyledBackButtonIcon />
+          <StyledBackButton />
         </button>
         <h1>{name ? `${name}` : 'Favorite'} Chairs</h1>
+        <StyledLogo src="../img/Logo2.svg" alt="logo" />
       </HeadingContainer>
 
       {filteredChairs.map(chair => (
@@ -30,18 +30,19 @@ export default function ChairList({chairs, toggleDescription, showDescription, t
           toggleLike={toggleLike}
         />
       ))}
+      <FooterNav />
     </ChairContainer>
   );
 }
 const HeadingContainer = styled.div`
   display: flex;
-  margin: auto;
-  width: 90vw;
+  justify-content: space-between;
+  width: 90%;
+  gap: 1rem;
 
   h1 {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: normal;
   }
 
@@ -49,7 +50,19 @@ const HeadingContainer = styled.div`
     background-color: transparent;
     border: none;
   }
+
+  @media (min-width: 667px) {
+    max-width: 90%;
+  }
 `;
+const StyledBackButton = styled(AiOutlineLeft)`
+  font-size: 1.7rem;
+  
+`;
+const StyledLogo = styled.img`
+  width: 3rem;
+`;
+
 const ChairContainer = styled.div`
   display: flex;
   flex-flow: wrap column;
@@ -61,9 +74,6 @@ const ChairContainer = styled.div`
 
   @media (min-width: 600px) {
     width: 90vw;
+    margin-bottom: 0;
   }
-`;
-
-const StyledBackButtonIcon = styled(MdArrowBackIos)`
-  font-size: 2rem;
 `;

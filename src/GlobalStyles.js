@@ -8,8 +8,7 @@ export default styled.createGlobalStyle`
     --primary-color: #b4a7a7;
     --primary-light-color: #ebe8e8;
     --secondary-color: #3e0c09;
-    --secondary-light-color: #541d1a;
-    --third-color: #062b03;
+    --secondary-light-color: #8d2c2c;
   }
   * {
     box-sizing: border-box;

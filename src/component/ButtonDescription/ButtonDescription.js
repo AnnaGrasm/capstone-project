@@ -16,7 +16,7 @@ export default function ButtonDescription({toggleDescription, showDescription, i
           </p>
         )}
       </span>
-      <OpenDescriptionText showDescription={showDescription === id || false}>
+      <OpenDescriptionText showDescription={showDescription === id ? true : false}>
         <p>{description}</p>
       </OpenDescriptionText>
       <ScreenReaderOnly>description text about {name}</ScreenReaderOnly>
@@ -34,13 +34,12 @@ const Button = styled.button`
   color: var(--secondary-color);
   background-color: transparent;
   max-width: 18rem;
-  text-transform: uppercase;
+  
 
   @media (min-width: 667px) {
     max-width: 30rem;
   }
 `;
-
 const OpenDescriptionText = styled.div`
   height: ${({showDescription}) => (showDescription ? '10rem' : '0')};
   overflow-y: scroll;
