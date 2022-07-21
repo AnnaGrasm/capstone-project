@@ -5,7 +5,7 @@ import {keyframes} from 'styled-components';
 export default function SplashScreen() {
   return (
     <SplashContainer>
-      <StyledHeader>Find your Perfect Desing chair</StyledHeader>
+      <StyledHeader>Find your Perfect Design chair</StyledHeader>
 
       <StyledImage src="./img/Logo2.svg" alt="logo" />
 
@@ -19,11 +19,7 @@ export default function SplashScreen() {
 
 const pulse = keyframes`
 0% {
-    transform : scaleX(0);
-    
-}
-50% {
-    transform : scale(0.9);
+    transform : scale(.9);
     
 }
 100% {
@@ -42,7 +38,7 @@ const SplashContainer = styled.div`
 
 const StyledImage = styled.img`
   width: 14rem;
-  animation: ${pulse} 3s infinite;
+  animation: ${pulse} 1s linear;
 `;
 
 const StyledHeader = styled.h3`

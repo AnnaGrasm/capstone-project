@@ -40,7 +40,7 @@ export const StyledHeading = styled.div`
     font-weight: 700;
   }
   img {
-    width: 3rem;
+    width: 4rem;
   }
 `;
 const NavigationContainer = styled.nav`

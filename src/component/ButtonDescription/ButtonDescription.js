@@ -7,15 +7,16 @@ import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 export default function ButtonDescription({toggleDescription, showDescription, id, name, description}) {
   return (
     <Button role="button" onClick={toggleDescription}>
-      <span>
-        {showDescription === id ? (
-          <AiFillCaretUp />
-        ) : (
-          <p>
-            Show more Information <AiFillCaretDown />
-          </p>
-        )}
-      </span>
+      {showDescription === id ? (
+        <StyledInformation>
+          <AiFillCaretUp /> Show less Information 
+        </StyledInformation>
+      ) : (
+        <StyledInformation>
+          Show more Information <AiFillCaretDown />
+        </StyledInformation>
+      )}
+
       <OpenDescriptionText showDescription={showDescription === id ? true : false}>
         <p>{description}</p>
       </OpenDescriptionText>
@@ -34,16 +35,14 @@ const Button = styled.button`
   color: var(--secondary-color);
   background-color: transparent;
   max-width: 18rem;
-  
 
   @media (min-width: 667px) {
     max-width: 30rem;
   }
 `;
 const OpenDescriptionText = styled.div`
-  height: ${({showDescription}) => (showDescription ? '10rem' : '0')};
+  height: ${({showDescription}) => (showDescription ? 'auto' : '0')};
   overflow-y: scroll;
-  scroll-behavior: scroll;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-color: transparent;
 
@@ -54,3 +53,9 @@ const OpenDescriptionText = styled.div`
     line-height: 1.4rem;
   }
 `;
+
+const StyledInformation = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
