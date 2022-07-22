@@ -21,5 +21,4 @@ This project was created with [Create React App](https://create-react-app.dev/do
 - open http://localhost:3000 to view it in the browser, or you will be asked to confirm another port if this one isn't available.
 - to run React Testing Library & Jest `npm run test`
 - to run Storybook `npm run storybook`
-- Create .env.local file (please check if you have added env.local in your .gitignore)
 
