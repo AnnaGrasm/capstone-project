@@ -2,10 +2,10 @@ import {useState, useEffect} from 'react';
 import {Routes, Route} from 'react-router-dom';
 
 import ChairList from './component/ChairList/ChairList';
-import FooterNav from './component/FooterNav';
 import chairsData from './data.json';
 import {setToLocal, getFromLocal} from './lib/localStorage.js';
 import Home from './pages/Home';
+import SplashScreen from './pages/SplashScreen';
 
 export default function App() {
   const [showDescription, setShowDescription] = useState(false);
@@ -18,7 +18,7 @@ export default function App() {
     showDescription === id ? setShowDescription(false) : setShowDescription(id);
   };
 
-  const likedChairs = chairs.filter(chair => chair.isLiked);
+  const likedChairs = chairs.filter(chair => chair.isLiked );
 
   function toggleLike(id) {
     const index = chairs.findIndex(chair => chair._id === id);
@@ -33,9 +33,9 @@ export default function App() {
 
   return (
     <>
-      <FooterNav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<SplashScreen />} />
+        <Route path="/home" element={<Home />} />
         <Route
           path="/chairs/:name"
           element={

@@ -56,8 +56,14 @@ const ChairItem = styled.section`
   background-color: var(--primary-color);
 
   @media (min-width: 600px) {
-    width: 90%;
+    max-width: 90%;
+    
   }
+  @media (min-width: 800px) {
+    max-width: 70%;
+    
+  }
+
 `;
 
 const ChairHeader = styled.h2`

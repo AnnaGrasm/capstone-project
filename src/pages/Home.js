@@ -1,16 +1,22 @@
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
+import FooterNav from '../component/FooterNav';
+
 export default function Home() {
   return (
     <HomeContainer>
-      <Heading>Find your perfect chair</Heading>
+      <StyledHeading>
+        <h1>Choose your style</h1>
+        <img src="../img/Logo2.svg" alt="logo" />
+      </StyledHeading>
       <NavigationContainer>
         <StyledLink to={`/chairs/industrial`}>Industrial</StyledLink>
         <StyledLink to={`/chairs/scandinavian`}>Scandinavian</StyledLink>
         <StyledLink to={`/chairs/contemporary`}>Contemporary</StyledLink>
         <StyledLink to={`/chairs/mid-century-modern`}>Mid-Century Modern</StyledLink>
       </NavigationContainer>
+      <FooterNav />
     </HomeContainer>
   );
 }
@@ -23,11 +29,19 @@ const HomeContainer = styled.main`
   min-height: 100vh;
 `;
 
-const Heading = styled.h1`
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
+export const StyledHeading = styled.div`
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  gap: 3rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  img {
+    width: 4rem;
+  }
 `;
 const NavigationContainer = styled.nav`
   display: grid;
@@ -40,9 +54,9 @@ const NavigationContainer = styled.nav`
 `;
 const StyledLink = styled(Link)`
   padding: 0.5rem;
-  border: none;
   text-decoration: none;
   font-size: 1.3rem;
-  background: var(--primary-color);
   color: white;
+  background: var(--primary-color);
+  border: solid 3px var(--secondary-color);
 `;
