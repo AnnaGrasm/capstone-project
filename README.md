@@ -1,100 +1,25 @@
-# React App
+# Chairy
+## Find your perfect design chair
 
-This is a template for a [Create React App](https://create-react-app.dev/) with additional tools.
+![Chairy](./public/img/App-visualize.png)
+This app helps you to find the perfect design chair. You can choose between four different design styles and find more information about the specific chairs. You can also save your liked chairs on the favorite page. 
 
-- [Tech-Stack](#tech-stack)
-- [Project Setup](#project-setup)
-  - [Set up Vercel](#set-up-vercel)
-- [Getting started](#getting-started)
-- [Test Driven Development](#test-driven-development)
-- [Commands](#commands)
+### Tech Stack
+- React
+- React Router
+- React Testing Library / Jest
+- Storybook
+- Styled components
+- Loacal Storage
+- Figma
 
-It uses the following tools/libraries:
+This project was created with [Create React App](https://create-react-app.dev/docs/getting-started/)
 
-## Tech-Stack
+### You can clone this repository
+- install all npm dependencies `npm install`
+- run app in development mode via `npm run start`
+- open http://localhost:3000 to view it in the browser, or you will be asked to confirm another port if this one isn't available.
+- to run React Testing Library & Jest `npm run test`
+- to run Storybook `npm run storybook`
+- Create .env.local file (please check if you have added env.local in your .gitignore)
 
-- [Storybook](https://storybook.js.org/)
-- [Jest](https://jestjs.io/)
-- [Stylelint](https://stylelint.io/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-
-## Project Setup
-
-This project uses different deployments to make code reviews easier:
-
-- Vercel (App Production)
-- Vercel (App Preview)
-
-### Set up Vercel
-
-Please follow this guide: https://vercel.com/docs/concepts/git
-
-## Getting started
-
-**Run the development server:**
-
-```shell
-npm run start
-```
-
-**Run storybook:**
-
-```shell
-npm run storybook
-```
-
-## Test Driven Development
-
-We jest to write unit tests. Please look at the Documentation for [Jest](https://jestjs.io/)
-and [testing-library](https://testing-library.com/docs/react-testing-library/intro/).
-
-## Commands
-
-**Run the development server:**
-
-```shell
-npm run dev
-```
-
-**Build:**
-
-```shell
-npm run build
-```
-
-**Run storybook:**
-
-```shell
-npm run storybook
-```
-
-**Build storybook:**
-
-```shell
-npm run storybook:build
-```
-
-**Run all tests:**
-
-```shell
-npm run test
-```
-
-**Run stylelint**
-
-```shell
-npm run stylelint
-```
-
-**Run eslint**
-
-```shell
-npm run eslint
-```
-
-**Run all linters**
-
-```shell
-npm run lint
-```
