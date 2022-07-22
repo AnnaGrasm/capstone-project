@@ -5,10 +5,8 @@ import useItems from './hooks/useItems';
 import Home from './pages/Home';
 import SplashScreen from './pages/SplashScreen';
 
-
 export default function App() {
-
-  const {toggleDescription, likedChairs, toggleLike, chairs, showDescription} = useItems()
+  const {toggleDescription, likedChairs, toggleLike, chairs, showDescription} = useItems();
 
   return (
     <>
