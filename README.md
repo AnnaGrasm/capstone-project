@@ -1,7 +1,9 @@
 # Chairy
 ## Find your perfect design chair
 
-![Chairy](./public/img/App-visualize.png)
+
+![Chairy](./public/app/app-img.png)
+
 This app helps you to find the perfect design chair. You can choose between four different design styles and find more information about the specific chairs. You can also save your liked chairs on the favorite page. 
 
 ### Tech Stack
