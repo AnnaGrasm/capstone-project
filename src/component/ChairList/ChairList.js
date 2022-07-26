@@ -18,7 +18,7 @@ export default function ChairList({chairs, toggleDescription, showDescription, t
           <StyledBackButton />
         </button>
         <h1>{name ? `${name}` : 'Favorite'} Chairs</h1>
-        <StyledLogo src="../img/Logo2.svg" alt="logo" />
+        <StyledLogo src="../icons/Logo2.svg" alt="logo" />
       </HeadingContainer>
 
       {!filteredChairs.length ? (
@@ -58,6 +58,11 @@ const HeadingContainer = styled.div`
     border: none;
   }
 
+  @media (min-width: 667px) {
+    width: 90%;
+    
+  }
+
 `;
 const StyledBackButton = styled(AiOutlineLeft)`
   font-size: 1.7rem;
@@ -90,7 +95,7 @@ const ChairContainer = styled.div`
   margin-bottom: 2rem;
   background-color: var(--primary-light-color);
 
-  @media (min-width: 600px) {
+  @media (min-width: 667px) {
     width: 90%;
     margin-bottom: 0;
   }

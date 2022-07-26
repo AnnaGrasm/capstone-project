@@ -26,7 +26,7 @@ const navIconAnimation = keyframes`
  
   100%
   {
-    transform: scale( 1.1 );
+    transform: scale( 1 );
     color: #7e1818;
   }
 `;
@@ -43,7 +43,7 @@ const NavStyledContainer = styled.nav`
   border-radius: 10px;
   background-color: var(--primary-light-color);
 
-  @media (min-width: 600px) {
+  @media (min-width: 667px) {
     grid-template-columns: auto;
     width: 10%;
     right: 0;
@@ -62,7 +62,7 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 const StyledHomeIcon = styled(AiFillHome)`
-  font-size: 2.7rem;
+  font-size: 2.8rem;
 `;
 const StyledHeardIcon = styled(FaHeart)`
   font-size: 2.6rem;

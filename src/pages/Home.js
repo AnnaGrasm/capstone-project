@@ -8,7 +8,7 @@ export default function Home() {
     <HomeContainer>
       <StyledHeading>
         <h1>Choose your style</h1>
-        <img src="../img/Logo2.svg" alt="logo" />
+        <img src="../icons/Logo2.svg" alt="logo" />
       </StyledHeading>
       <NavigationContainer>
         <StyledLink to={`/chairs/industrial`}>Industrial</StyledLink>

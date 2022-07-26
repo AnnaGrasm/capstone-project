@@ -1,12 +1,19 @@
-import ButtonLike from "./ButtonLike";
+import ButtonLike from './ButtonLike';
 
-export function Default() {
-	return <ButtonLike />;
-}
+const Template = args => <ButtonLike {...args} />;
+
+export const Like = Template.bind({});
+
+Like.args = {
+  isLiked: true,
+};
 
 const story = {
-	title: "Component/ButtonLike",
-	component: ButtonLike
+  title: 'Component/ButtonLike',
+  component: ButtonLike,
+  argTypes: {
+    toggleLike: {action: 'click'},
+  },
 };
 
 export default story;

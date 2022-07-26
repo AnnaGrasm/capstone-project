@@ -7,11 +7,11 @@ export default function SplashScreen() {
     <SplashContainer>
       <StyledHeader>Find your Perfect Design chair</StyledHeader>
 
-      <StyledImage src="./img/Logo2.svg" alt="logo" />
+      <StyledImage src="./icons/Logo2.svg" alt="logo" />
 
       <StyledLink to={`/home`} role="back to home page">
         <p>get started</p>
-        <img src="./img/Arrow.svg" alt="" />
+        <img src="./icons/Arrow.svg" alt="" />
       </StyledLink>
     </SplashContainer>
   );

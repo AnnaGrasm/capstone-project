@@ -55,14 +55,11 @@ const ChairItem = styled.section`
   border: solid 4px var(--secondary-color);
   background-color: var(--primary-color);
 
-  @media (min-width: 600px) {
+  @media (min-width: 667px) {
     max-width: 90%;
     
   }
-  @media (min-width: 800px) {
-    max-width: 70%;
-    
-  }
+ 
 
 `;
 
